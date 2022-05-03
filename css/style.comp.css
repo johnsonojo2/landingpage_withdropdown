@@ -175,6 +175,8 @@ body {
     @media screen and (max-width: 980px) {
       .navigation .burger {
         display: block; } }
+  .navigation .main {
+    display: flex; }
 
 .mobile-active {
   transform: translateX(0%);
