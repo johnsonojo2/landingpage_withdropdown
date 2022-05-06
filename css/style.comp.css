@@ -20,7 +20,6 @@ body {
   background: var(--almost-white);
   font-family: "Epilogue", sans-serif;
   font-size: 1.5rem;
-  line-height: 1.5;
   color: var(--medium-gray); }
   @media screen and (max-width: 980px) {
     body {
@@ -175,8 +174,35 @@ body {
     @media screen and (max-width: 980px) {
       .navigation .burger {
         display: block; } }
-  .navigation .main {
-    display: flex; }
+
+.main {
+  display: flex;
+  height: 60rem; }
+  .main .info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18rem;
+    flex: 1;
+    width: 0;
+    justify-content: center; }
+    .main .info h1 {
+      width: 83%;
+      color: var(--almost-black);
+      font-size: 8.5rem;
+      font-weight: 700;
+      margin-bottom: 5rem; }
+    .main .info .main-p {
+      line-height: 1.5;
+      width: 70%;
+      font-size: 1.8rem;
+      margin-bottom: 4rem; }
+  .main .image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 0; }
+    .main .image .hero {
+      height: 100%; }
 
 .mobile-active {
   transform: translateX(0%);
