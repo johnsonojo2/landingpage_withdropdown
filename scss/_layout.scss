@@ -1,5 +1,5 @@
 .navigation {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -244,15 +244,16 @@
 
 .main {
   display: flex;
-  height: 59rem;
+  height: 63rem;
+  padding-top: 4rem;
   .info {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     padding-left: 20rem;
-    padding-top: 5.3rem;
+    padding-top: 9rem;
     flex: 1;
     width: 0;
-    justify-content: center;
+    // justify-content: center;
     h1 {
       width: 85%;
       color: var(--almost-black);
@@ -262,9 +263,10 @@
     }
     .main-p {
       line-height: 1.5;
-      width: 66%;
-      font-size: 1.8rem;
+      width: 65%;
+      font-size: 1.7rem;
       margin-bottom: 4rem;
+      word-spacing: 0.4rem;
     }
   }
   .main-cta {
@@ -275,14 +277,21 @@
     background: var(--almost-black);
     display: inline-block;
     border: 2px solid var(--almost-black);
-    border-radius: 2.5rem;
-    padding: 2.5rem 5rem;
-    margin-bottom: 7rem;
+    border-radius: 2rem;
+    padding: 2rem 5rem;
+    margin-bottom: 8rem;
     cursor: pointer;
     &:hover {
       color: var(--almost-black);
       font-weight: bold;
       background: var(--almost-white);
+    }
+  }
+  .logos {
+    img {
+      margin-right: 6rem;
+
+      width: 7rem;
     }
   }
 
@@ -294,7 +303,7 @@
 
     .hero {
       //     background-size: contain;
-      // width: 100%;
+      width: 65%;
       height: 100%;
     }
   }
