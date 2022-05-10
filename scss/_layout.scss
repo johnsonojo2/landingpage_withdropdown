@@ -244,9 +244,10 @@
 
 .main {
   display: flex;
-  min-height: 63rem;
+  height: 63rem;
   padding-top: 4rem;
   @media screen and (max-width: 980px) {
+    min-height: 63rem;
     flex-direction: column-reverse;
   }
   .info {
@@ -343,7 +344,7 @@
 
     .hero {
       //     background-size: contain;
-      width: 65%;
+      // width: 65%;
       height: 100%;
       @media screen and (max-width: 980px) {
         width: 100%;
