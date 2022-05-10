@@ -244,8 +244,11 @@
 
 .main {
   display: flex;
-  height: 63rem;
+  min-height: 63rem;
   padding-top: 4rem;
+  @media screen and (max-width: 980px) {
+    flex-direction: column-reverse;
+  }
   .info {
     // display: flex;
     // flex-direction: column;
@@ -254,12 +257,28 @@
     flex: 1;
     width: 0;
     // justify-content: center;
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 0.5rem;
+    }
     h1 {
       width: 85%;
       color: var(--almost-black);
       font-size: 8.5rem;
       font-weight: 700;
       margin-bottom: 4rem;
+      @media screen and (max-width: 980px) {
+        width: 100%;
+        font-size: 6.5rem;
+      }
+      @media screen and (max-width: 400px) {
+        width: 100%;
+        font-size: 3.5rem;
+      }
     }
     .main-p {
       line-height: 1.5;
@@ -267,6 +286,14 @@
       font-size: 1.7rem;
       margin-bottom: 4rem;
       word-spacing: 0.4rem;
+      @media screen and (max-width: 980px) {
+        width: 100%;
+        font-size: 2.1rem;
+        word-spacing: 0rem;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 1.7rem;
+      }
     }
   }
   .main-cta {
@@ -281,6 +308,9 @@
     padding: 2rem 5rem;
     margin-bottom: 8rem;
     cursor: pointer;
+    @media screen and (max-width: 400px) {
+      margin-bottom: 4rem;
+    }
     &:hover {
       color: var(--almost-black);
       font-weight: bold;
@@ -292,6 +322,11 @@
       margin-right: 6rem;
 
       width: 7rem;
+      @media screen and (max-width: 400px) {
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        width: 7rem;
+      }
     }
   }
 
@@ -300,11 +335,19 @@
     flex: 1;
     justify-content: center;
     width: 0;
+    @media screen and (max-width: 980px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
 
     .hero {
       //     background-size: contain;
       width: 65%;
       height: 100%;
+      @media screen and (max-width: 980px) {
+        width: 100%;
+      }
     }
   }
 }
